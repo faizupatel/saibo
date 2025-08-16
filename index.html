@@ -1,0 +1,328 @@
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Saybo Chinese Restro</title>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<style>
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(45deg, #d4145a, #fbb03b, #ff5f6d, #ffc371);
+      background-size: 400% 400%;
+      animation: gradientShift 8s ease infinite;
+      margin: 0;
+      padding: 20px;
+      color: #2c2c2c;
+    }
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .top-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+    .fancy-btn {
+      font-family: 'Quicksand', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 12px 24px;
+      border-radius: 30px;
+      background: linear-gradient(45deg, #d4145a, #fbb03b, #ff5f6d, #ffc371);
+      background-size: 400% 400%;
+      color: white;
+      text-decoration: none;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: gradientShift 8s ease infinite;
+      border: none;
+    }
+    .fancy-btn:hover {
+      transform: scale(1.07);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    }
+    .menu-container {
+      max-width: 900px;
+      margin: auto;
+      background: rgba(255,255,255,0.95);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    }
+    header h1 {
+      text-align: center;
+      font-size: 3rem;
+      background: linear-gradient(45deg, #d4145a, #fbb03b);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 40px;
+    }
+    .section {
+      margin-bottom: 30px;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 15px;
+      transition: all 0.3s ease;
+      border-left: 6px solid #d4145a;
+    }
+    .section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+    }
+    .section h2 span {
+      font-size: 1.2rem;
+      transition: transform 0.3s ease;
+    }
+    .section h2.open span {
+      transform: rotate(180deg);
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.4s ease;
+    }
+    ul.expanded {
+      max-height: 2000px;
+    }
+    ul li {
+      background: #f1f1f1;
+      margin: 8px 0;
+      padding: 12px;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    ul li:hover {
+      background: #ffeaa7;
+      transform: scale(1.02);
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 1rem;
+      color: #444;
+    }
+    .badge {
+      background: #d4145a;
+      color: #fff;
+      padding: 2px 8px;
+      border-radius: 10px;
+      font-size: 0.75rem;
+      margin-right: 8px;
+    }
+    .must {
+      background: #fbb03b;
+      color: #000;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .section h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="menu-container">
+<div style="background-color: white; padding: 15px; border-radius: 15px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-bottom: 30px;">
+<a class="fancy-btn" href="https://www.instagram.com/saibo_chinese_restro?igsh=MTd3YTYxeWxrc3M5ZQ==" target="_blank">📸 Follow Us</a>
+<a class="fancy-btn" href="https://maps.app.goo.gl/RQpBi3FR1gAZVjoP6?g_st=aw" target="_blank">⭐ Review Us</a>
+</div>
+<header>
+<div style="text-align:center;">
+<h1 style="margin:0; font-size:2.5rem; background: linear-gradient(45deg, #d4145a, #fbb03b); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Saibo Chinese Restro</h1>
+</div>
+</header>
+
+<section class="section">
+<h2>⭐ Veg Saibo Special <span>⏷</span></h2>
+<ul>
+<li>⭐ Veg Saibo Special <span>90/-</span></li>
+</ul>
+</section>
+
+<section class="section">
+<h2>🥣 Soups <span>⏷</span></h2>
+<ul>
+<li><span class="badge">Bestseller</span> 🐔 Chicken Hot &amp; Sour Soup <span>50/- | 80/-</span></li>
+<li>🐔 Chicken Manchow Soup <span>50/- | 80/-</span></li>
+<li>🐔 Chicken Korean Soup <span>50/- | 80/-</span></li>
+<li>🐔 Chicken Ginger Soup <span>50/- | 80/-</span></li>
+<li>🐔 Chicken Soup <span>50/- | 80/-</span></li>
+<li>🐔 Chicken Manchurian Soup <span>50/- | 80/-</span></li>
+<li>🥦 Veg Hot &amp; Sour Soup <span>50/- | 80/-</span></li>
+<li>🥦 Veg Manchow Soup <span>50/- | 80/-</span></li>
+<li>🥦 Veg Korean Soup <span>40/- | 70/-</span></li>
+<li>🥦 Veg Ginger Soup <span>40/- | 70/-</span></li>
+<li>🥦 Veg Tomato Soup <span>40/- | 70/-</span></li>
+<li>🥦 Veg Manchurian Soup <span>40/- | 70/-</span></li>
+</ul>
+</section>
+<section class="section">
+<h2>🍗 Chicken Lollipop <span>⏷</span></h2>
+<ul>
+<li>🍗 Chicken Derry Lollipop <span>80/- | 160/-</span></li>
+<li>🍗 Chicken 65 <span>50/- (100gm)</span></li>
+<li>🍗 Chicken Lollipop Masala <span>80/- | 160/-</span></li>
+<li>🍗 Chicken Gravy Lollipop <span>90/- | 180/-</span></li>
+<li><span class="badge must">Must Try</span> 🌶️ Chicken Chilli <span>80/- | 160/-</span></li>
+<li>🍗 Chicken Manchurian <span>80/- | 160/-</span></li>
+<li>🍗 Chicken Manchurian Gravy <span>90/- | 180/-</span></li>
+<li><span class="badge">Bestseller</span> 🥟 Chicken Momos <span>70/- | 140/-</span></li>
+</ul>
+</section>
+<section class="section">
+<h2>🍗 Non-Veg Rice <span>⏷</span></h2>
+<ul>
+<li>🍛 Chicken Triple Rice <span>80/- | 160/-</span></li>
+<li>🍛 Chicken Rice <span>60/- | 120/-</span></li>
+<li>🍛 Chicken Manchurian Rice <span>90/- | 180/-</span></li>
+<li>🍛 Chicken Schezwan Rice <span>70/- | 140/-</span></li>
+<li>🍛 Chicken 1000 Rice <span>100/- | 200/-</span></li>
+<li>🍛 Chicken Dragon Rice <span>110/- | 240/-</span></li>
+<li>🍛 Chicken Singaporean Rice <span>70/- | 140/-</span></li>
+<li>🍛 Chicken Kolhapuri Rice <span>70/- | 140/-</span></li>
+<li>🍛 Chicken Jeera Rice <span>60/- | 120/-</span></li>
+<li>🍛 Chicken Hekkan Rice <span>80/- | 160/-</span></li>
+<li>🍛 Chicken Malaysian Rice <span>80/- | 160/-</span></li>
+<li>🍛 Chicken Koren Rice <span>70/- | 140/-</span></li>
+<li>🍛 Chicken Combination Rice <span>70/- | 140/-</span></li>
+<li>🍛 Chicken Tripal com.Rice <span>90/- | 180/-</span></li>
+</ul>
+</section>
+<section class="section">
+<h2>🍝 Non-Veg Noodles <span>⏷</span></h2>
+<ul>
+<li>🍜 Chicken Triple Noodles <span>80/- | 160/-</span></li>
+<li>🍜 Chicken Noodles <span>60/- | 120/-</span></li>
+<li>🍜 Chicken Manchurian Noodles <span>90/- | 180/-</span></li>
+<li>🍜 Chicken Schezwan Noodles <span>70/- | 140/-</span></li>
+<li>🍜 Chicken 1000 Noodles <span>100/- | 200/-</span></li>
+<li>🍜 Chicken Dragon Noodles <span>110/- | 240/-</span></li>
+<li>🍜 Chicken Singaporean Noodles <span>70/- | 140/-</span></li>
+<li>🍜 Chicken Kolhapuri  Noodles <span>70/- | 140/-</span></li>
+<li>🍜 Chicken  Jeera Noodles <span>60/- | 120/-</span></li>
+<li>🍜 Chicken  Hekkan Noodles <span>80/- | 160/-</span></li>
+<li>🍜 Chicken Malaysian Noodles <span>80/- | 160/-</span></li>
+<li>🍜 Chicken Hakka  Noodles <span>70/- | 140/-</span></li>
+<li>🍜 Chicken Korean Noodles <span>70/- | 140/-</span></li>
+</ul>
+</section>
+<section class="section">
+<h2>🥬 Veg Rice <span>⏷</span></h2>
+<ul>
+<li>🥗 Veg Triple Rice <span>80/- | 160/-</span></li>
+<li>🥗 Veg Rice <span>60/- | 120/-</span></li>
+<li>🥗 Veg Manchurian Rice <span>90/- | 180/-</span></li>
+<li>🥗 Veg Schezwan Rice <span>70/- | 140/-</span></li>
+<li>🥗 Veg 1000 Rice <span>100/- | 200/-</span></li>
+<li>🥗 Veg Dragon Rice <span>110/- | 240/-</span></li>
+<li>🥗 Veg Singaporean Rice <span>70/- | 140/-</span></li>
+<li>🥗 Veg Kolhapuri Rice <span>70/- | 140/-</span></li>
+<li>🥗 Veg Jeera Rice <span>60/- | 120/-</span></li>
+<li>🥗 Veg Hekkan Rice<span>80/- | 160/-</span></li>
+<li>🥗 Veg Malaysian Rice <span>80/- | 160/-</span></li>
+<li>🥗 Veg Korean Rice <span>70/- | 180/-</span></li>
+<li>🥗 Veg Combination Rice <span>70/- | 140/-</span></li>
+<li>🥗 Veg Triple Combination Rice <span>90/- | 180/-</span></li>
+</ul>
+</section>
+<section class="section">
+<h2>🍜 Veg Noodles <span>⏷</span></h2>
+<ul>
+<li>🥡 Veg Triple Noodles <span>80/- | 160/-</span></li>
+<li>🥡 Veg Noodles <span>60/- | 120/-</span></li>
+<li>🥡 Veg Manchurian Noodles <span>90/- | 180/-</span></li>
+<li>🥡 Veg Schezwan Noodles <span>70/- | 140/-</span></li>
+<li>🥡 Veg 1000 Noodles <span>100/- | 200/-</span></li>
+<li>🥡 Veg Dragon Noodles <span>120/- | 240/-</span></li>
+<li>🥡 Veg Singaporean Noodles No <span>70/- | 140/-</span></li>
+<li>🥡 Veg Kolhapuri  Noodles <span>70/- | 140/-</span></li>
+<li>🥡 Veg Jeera  Noodles <span>60/- | 120/-</span></li>
+<li>🥡 Veg Hekkan Noodles <span>80/- | 160/-</span></li>
+<li>🥡 Veg Malaysian Noodles <span>80/- | 160/-</span></li>
+<li>🥡 Veg Hakka  Noodles <span>70/- | 140/-</span></li>
+<li>🥡 Veg Korean Noodles <span>70/- | 140/-</span></li>
+</ul>
+</section>
+<section class="section">
+<h2>🥟 Veg Mancherion <span>⏷</span></h2>
+<ul>
+<li>🥦 Veg Derry Gobi Manchurian <span>50/- | 80/-</span></li>
+<li>🥦 Veg Gobi Manchurian <span>50/- | 100/-</span></li>
+<li>🧀 Veg Paneer Manchurian <span>70/- | 40/-</span></li>
+<li>🥗 Veg Chinese Bhel <span>80/- | 160/-</span></li>
+<li>🥦 Veg Cauliflower Manchurian <span>60/- | 120/-</span></li>
+<li>🧀 Veg Paneer Chilli <span>80/- | 160/-</span></li>
+<li>🥢 Veg Finger Crispy Masala <span>60/- | 120/-</span></li>
+<li>🥟 Veg Momos <span>50/- | 100/-</span></li>
+<li><span class="badge must">Must Try</span> 🍝 Veg American Copchi <span>60/- | 120/-</span></li>
+</ul>
+</section>
+
+<div style="text-align: center; margin-top: 40px; font-size: 1.2rem; font-weight: bold;">
+    🙏 Thank you for visiting
+</div>
+
+<div style="text-align: center; margin-top: 15px; font-size: 1rem; line-height: 1.6;">
+    <p>Nitin Mohite – <a href="tel:9665068080" style="color: inherit; text-decoration: none;">9665068080</a></p>
+    <p>Sonu Gavali – <a href="tel:9975827948" style="color: inherit; text-decoration: none;">9975827948</a></p>
+    <a href="https://www.instagram.com/saibo_chinese_restro?igsh=MTd3YTYxeWxrc3M5ZQ==" target="_blank" style="display: inline-block; margin-top: 10px;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="height:40px; width:40px; vertical-align: middle;">
+    </a>
+</div>
+
+<footer>
+
+</footer>
+</div>
+<script>
+    document.querySelectorAll(".section").forEach(section => {
+      const h2 = section.querySelector("h2");
+      const ul = section.querySelector("ul");
+      const icon = h2.querySelector("span");
+
+      h2.addEventListener("click", () => {
+        const isOpen = ul.classList.toggle("expanded");
+        h2.classList.toggle("open", isOpen);
+      });
+    });
+</script>
+<div style="text-align: center; margin-top: 40px; background-color: orange; padding: 20px; border-radius: 10px;">
+  <p style="font-size: 1.2rem; font-weight: bold; margin-bottom: 10px; color: white;">Need a website - contact us</p>
+  <a href="https://www.instagram.com/ad.bhau?igsh=MWY3cWozMGIwcTRhZQ==" style="margin: 0 10px;" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" style="height:40px; width:40px;"/>
+  </a>
+  <a href="https://youtube.com/@adbhau01?si=8MtQYPacd0imcIz5" style="margin: 0 10px;" target="_blank">
+    <svg aria-label="YouTube" height="28" viewBox="0 0 100 70" width="40">
+      <rect fill="#FF0000" height="70" rx="15" ry="15" width="100" x="0" y="0"></rect>
+      <polygon fill="#FFFFFF" points="40,20 40,50 70,35"></polygon>
+    </svg>
+  </a>
+  <a href="https://www.facebook.com/share/1EyvGphdfT/" style="margin: 0 10px;" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" style="height:40px; width:40px;"/>
+  </a>
+</div>
+</body>
+</html>
+
